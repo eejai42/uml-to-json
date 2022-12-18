@@ -107,6 +107,91 @@ UML (Unified Modeling Language) is a visual language for modeling software syste
 
 PlantUML is a tool for creating UML diagrams. It allows users to define their diagrams using a simple, human-readable syntax, and provides various features for customizing and styling their diagrams. PlantUML is not a replacement for UML, but rather a tool for creating and rendering UML diagrams.
 
+## Testing Architecture
+
+This project uses [Mocha](https://mochajs.org/) as the testing framework. Mocha is a flexible and feature-rich JavaScript testing library that allows you to write and run tests for your code.
+
+To install Mocha, run the following command in the project's root directory:
+
+```
+npm install --save-dev mocha
+```
+
+Once Mocha is installed, you can configure it by creating a `test` script in the package.json file:
+
+```
+"scripts": {
+  "test": "mocha test"
+}
+```
+
+To run the tests, simply run the following command:
+
+```
+npm test
+```
+
+This will execute all of the tests in the `test` directory, and display the results in the console.
+
+Note that you may need to adjust the test script depending on the structure of your project and the specific needs of your tests. For example, you may need to specify a different test directory or pass additional arguments to Mocha. For more information on configuring Mocha, see the [Mocha documentation](https://mochajs.org/).
+
+## Dependencies
+
+This project has the following dependencies:
+
+- [Commander](https://www.npmjs.com/package/commander): A command line interface (CLI) library that makes it easy to create CLIs in Node.js.
+- [Plantuml-parser](https://www.npmjs.com/package/plantuml-parser): A parser for PlantUML diagrams that converts the diagrams to a JSON representation.
+
+These dependencies are specified in the package.json file and can be installed by running the following command in the project's root directory:
+
+```
+npm install
+```
+
+This will install all of the required dependencies and their dependencies, allowing you to use them in your project.
+
+Note that you may need to update the dependencies if new versions are released or if you need to use a specific version of a dependency. To update the dependencies, run the following command:
+
+```
+npm update
+```
+
+This will update all of the dependencies to their latest versions, as specified in the package.json file.
+
+## Installing and Configuring Node.js
+
+This project requires [Node.js](https://nodejs.org/) to run. Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine that allows you to execute JavaScript code on the server side.
+
+To install Node.js, follow these steps:
+
+1. Go to the [Node.js download page](https://nodejs.org/en/download/).
+2. Select the version of Node.js that you want to install.
+3. Follow the instructions to download and install Node.js.
+
+Once Node.js is installed, you can confirm that it is working by running the following command in a terminal or command prompt:
+
+```
+node -v
+```
+
+This will print the version of Node.js that you have installed.
+
+To configure Node.js, you can set the following environment variables:
+
+- `NODE_ENV`: Sets the environment for the application. This can be set to "development", "test", or "production".
+- `NODE_PATH`: Sets the search path for Node.js modules. This can be used to specify a custom directory for your modules.
+
+You can set these variables in the terminal or command prompt by running the following commands:
+
+```
+export NODE_ENV=development
+export NODE_PATH=./lib
+```
+
+Alternatively, you can set these variables in the system or user environment variables, depending on your operating system.
+
+For more information on installing and configuring Node.js, see the [Node.js documentation](https://nodejs.org/en/docs/).
+
 ## Credits
 `uml-to-json` was created by [ssotme](https://github.com/ssotme). Special thanks to all the contributors who have helped to make this tool possible.
 

@@ -12,5 +12,8 @@
     },
     "bin": {
         "uml-to-json": "app.js"
-    }
+    },
+    "scripts": {
+        "test": "mocha ./tests/tests.js"
+      }
 }
