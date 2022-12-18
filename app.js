@@ -14,11 +14,11 @@ try {
 
     program
         .option('-i, --input <input>', 'input PlantUML file')
-        .option('-o, --output <output>', 'Output json file name.  Default value: uml.json')
+        .option('-o, --output <output>', 'Output json file name.  Default value: {input file name}.json')
         .option('-h, --help', 'Show the usage/help documentation.')
         .action(action => {
             program.input = action.input
-            program.output = action.output || 'uml.json';
+            program.output = action.output || action.input + '.json';
          })
         .parse(process.argv);
 

@@ -1,0 +1,44 @@
+@startuml
+
+class School {
+  - name: String
+  - address: String
+  - students: Student[]
+  - teachers: Teacher[]
+  - courses: Course[]
+}
+
+class Student {
+  - firstName: String
+  - lastName: String
+  - grade: Integer
+  - courses: Course[]
+  + enroll(course: Course): void
+  + withdraw(course: Course): void
+  + viewGrades(): void
+}
+
+class Teacher {
+  - firstName: String
+  - lastName: String
+  - courses: Course[]
+  + assignGrade(student: Student, course: Course, grade: Integer): void
+  + addCourse(course: Course): void
+  + removeCourse(course: Course): void
+}
+
+class Course {
+  - name: String
+  - students: Student[]
+  - teacher: Teacher
+  + addStudent(student: Student): void
+  + removeStudent(student: Student): void
+}
+
+School "1" -- "*" Student
+School "1" -- "*" Teacher
+School "1" -- "*" Course
+Student "*" -- "*" Course
+Teacher "1" -- "*" Course
+
+@enduml

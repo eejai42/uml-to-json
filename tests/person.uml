@@ -1,0 +1,9 @@
+@startuml
+class Person {
+
+  name: string
+  age: int
+  getName(): string
+  setName(name: string): void
+}
+@enduml

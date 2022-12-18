@@ -38,6 +38,7 @@ PlantUML is a popular open-source tool for creating UML diagrams. It allows user
 
 Here is an example of a simple PlantUML diagram that models a class with two attributes and two methods:
 
+`person.uml`
 ```
 @startuml
 class Person {
@@ -49,6 +50,51 @@ class Person {
 }
 @enduml
 ```
+
+`person.json`
+```[
+  {
+    "elements": [
+      {
+        "name": "Person",
+        "title": "Person",
+        "isAbstract": false,
+        "members": [
+          {
+            "name": "name",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "string"
+          },
+          {
+            "name": "age",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "int"
+          },
+          {
+            "name": "getName",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": ""
+          },
+          {
+            "name": "setName",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": "name: string"
+          }
+        ],
+        "extends_": [],
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
+      }
+    ]
+  }
+]```
 
 This PlantUML code defines a class called `Person` with two attributes, `name` and `age`, and two methods, `getName` and `setName`. When rendered, this diagram would show a box with the class name, and the attributes and methods listed inside the box.
 

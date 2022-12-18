@@ -1,0 +1,266 @@
+[
+  {
+    "elements": [
+      {
+        "name": "School",
+        "title": "School",
+        "isAbstract": false,
+        "members": [
+          {
+            "name": "name",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "String"
+          },
+          {
+            "name": "address",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "String"
+          },
+          {
+            "name": "students",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "Student"
+          },
+          {
+            "name": "teachers",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "Teacher"
+          },
+          {
+            "name": "courses",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "Course"
+          }
+        ],
+        "extends_": [],
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
+      },
+      {
+        "name": "Student",
+        "title": "Student",
+        "isAbstract": false,
+        "members": [
+          {
+            "name": "firstName",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "String"
+          },
+          {
+            "name": "lastName",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "String"
+          },
+          {
+            "name": "grade",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "Integer"
+          },
+          {
+            "name": "courses",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "Course"
+          },
+          {
+            "name": "enroll",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": "course: Course"
+          },
+          {
+            "name": "withdraw",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": "course: Course"
+          },
+          {
+            "name": "viewGrades",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": ""
+          }
+        ],
+        "extends_": [],
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
+      },
+      {
+        "name": "Teacher",
+        "title": "Teacher",
+        "isAbstract": false,
+        "members": [
+          {
+            "name": "firstName",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "String"
+          },
+          {
+            "name": "lastName",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "String"
+          },
+          {
+            "name": "courses",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "Course"
+          },
+          {
+            "name": "assignGrade",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": "student: Student, course: Course, grade: Integer"
+          },
+          {
+            "name": "addCourse",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": "course: Course"
+          },
+          {
+            "name": "removeCourse",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": "course: Course"
+          }
+        ],
+        "extends_": [],
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
+      },
+      {
+        "name": "Course",
+        "title": "Course",
+        "isAbstract": false,
+        "members": [
+          {
+            "name": "name",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "String"
+          },
+          {
+            "name": "students",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "Student"
+          },
+          {
+            "name": "teacher",
+            "isStatic": false,
+            "accessor": "-",
+            "type": "Teacher"
+          },
+          {
+            "name": "addStudent",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": "student: Student"
+          },
+          {
+            "name": "removeStudent",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": "student: Student"
+          }
+        ],
+        "extends_": [],
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
+      },
+      {
+        "left": "School",
+        "right": "Student",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "1",
+        "rightCardinality": "*",
+        "label": "",
+        "hidden": false
+      },
+      {
+        "left": "School",
+        "right": "Teacher",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "1",
+        "rightCardinality": "*",
+        "label": "",
+        "hidden": false
+      },
+      {
+        "left": "School",
+        "right": "Course",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "1",
+        "rightCardinality": "*",
+        "label": "",
+        "hidden": false
+      },
+      {
+        "left": "Student",
+        "right": "Course",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "*",
+        "rightCardinality": "*",
+        "label": "",
+        "hidden": false
+      },
+      {
+        "left": "Teacher",
+        "right": "Course",
+        "leftType": "Unknown",
+        "rightType": "Unknown",
+        "leftArrowHead": "",
+        "rightArrowHead": "",
+        "leftArrowBody": "-",
+        "rightArrowBody": "-",
+        "leftCardinality": "1",
+        "rightCardinality": "*",
+        "label": "",
+        "hidden": false
+      }
+    ]
+  }
+]

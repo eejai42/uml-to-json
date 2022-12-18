@@ -1,0 +1,43 @@
+[
+  {
+    "elements": [
+      {
+        "name": "Person",
+        "title": "Person",
+        "isAbstract": false,
+        "members": [
+          {
+            "name": "name",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "string"
+          },
+          {
+            "name": "age",
+            "isStatic": false,
+            "accessor": "+",
+            "type": "int"
+          },
+          {
+            "name": "getName",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": ""
+          },
+          {
+            "name": "setName",
+            "isStatic": false,
+            "accessor": "+",
+            "returnType": "void",
+            "_arguments": "name: string"
+          }
+        ],
+        "extends_": [],
+        "implements_": [],
+        "generics": [],
+        "stereotypes": []
+      }
+    ]
+  }
+]
