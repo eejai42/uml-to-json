@@ -1,0 +1,16 @@
+{
+    "name": "uml-to-json",
+    "version": "0.0.0",
+    "description": "NodejsConsoleApp1",
+    "main": "app.js",
+    "author": {
+        "name": ""
+    },
+    "dependencies": {
+        "commander": "^9.4.1",
+        "plantuml-parser": "^0.3.0"
+    },
+    "bin": {
+        "uml-to-json": "app.js"
+    }
+}
