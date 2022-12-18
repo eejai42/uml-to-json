@@ -1,5 +1,5 @@
 @startuml
-class Person {
+class Person2 {
 
   name: string
   age: int
