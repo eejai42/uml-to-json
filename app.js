@@ -12,20 +12,28 @@ try {
         console.log(input);
     });
 
-    var myInput = "foo";
-
     program
         .option('-i, --input <input>', 'input PlantUML file')
         .option('-o, --output <output>', 'Output json file name.  Default value: uml.json')
+        .option('-h, --help', 'Show the usage/help documentation.')
         .action(action => {
             program.input = action.input
             program.output = action.output || 'uml.json';
          })
         .parse(process.argv);
-    console.error("process", myInput);
 
     if (!program.input) {
-        console.error('Error: no input file specified');
+        console.error('Error: Required option -i, --input <input> not specified');
+        console.error('');
+        console.error('Usage: uml-to-json -i, --input <input> [options]');
+        console.error('');
+        console.error('');
+        console.error('Options:');
+        console.error('-i, --input <input>  Input PlantUML file');
+        console.error('-o, --output <output>  Output json file name. Default value: uml.json');
+        console.error('-h, --help     Output usage information');
+        console.error('');
+        
         process.exit(1);
     }
 
