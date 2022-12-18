@@ -1,16 +1,17 @@
 # uml-to-json
 
-UML (Unified Modeling Language) is a visual language used to model software systems. It allows developers to describe the structure and behavior of their systems in a clear and concise way. However, working with UML diagrams can be challenging, especially when it comes to integration with other tools and systems.
+Uml-to-json is a Node.js NPM command-line tool that can parse PlantUML text diagrams and return the Abstract Syntax Tree (AST) in JSON format. 
 
-This is where uml-to-json comes in. uml-to-json is a command-line tool that converts UML diagrams to JSON format, making it easier to parse and query the diagram data. With uml-to-json, you can import your UML diagrams and export them as JSON files, which can be easily read and interpreted by other programs and libraries.
+It allows developers to easily convert UML diagrams into a structured and easily queriable format, making it simpler to integrate them into their software development workflow. 
 
-Before using uml-to-json, your UML diagram may be in an unparsed, unstructured format. However, after running uml-to-json, your diagram will be parsed and structured in a way that is easily queriable. This makes it much easier to integrate your UML diagrams into your software development workflow, whether you are working on a small project or a large-scale enterprise application.
+By converting UML diagrams to JSON, uml-to-json allows developers to import and export them as JSON files, which can be easily read and interpreted by other programs and libraries. 
 
+This tool is particularly useful for working with large and complex UML diagrams, as it helps to structure and organize the data in a way that is more manageable and easier to understand.
 ## Installation
 
 To install uml-to-json, you will need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine. Once you have these prerequisites installed, you can install uml-to-json by running the following command:
 
-npm install -g ssotme/uml-to-json
+npm install -g eejai42/uml-to-json
 This will install uml-to-json globally, allowing you to use it from any directory on your machine.
 
 ## Usage
