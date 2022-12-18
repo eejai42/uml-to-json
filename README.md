@@ -94,7 +94,8 @@ class Person {
       }
     ]
   }
-]```
+]
+```
 
 This PlantUML code defines a class called `Person` with two attributes, `name` and `age`, and two methods, `getName` and `setName`. When rendered, this diagram would show a box with the class name, and the attributes and methods listed inside the box.
 
