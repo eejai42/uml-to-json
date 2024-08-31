@@ -15,5 +15,5 @@
     },
     "scripts": {
         "test": "mocha ./tests/tests.js"
-      }
+    }
 }
